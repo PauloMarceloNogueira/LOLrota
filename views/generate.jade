@@ -3,5 +3,8 @@ extends layout
 block content
   h1= title
   p #{lolrota}
+  div.top
+   div.main
+    a(class='button', href='/generate') Gerar nova LOLrota
 
-  a(class='button', href='/generate') Gerar nova LOLrota
+ include footer.jade

@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+
+.main{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.github{
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/giticon.png');
+	text-indent: -9999px;
+}
+
+.github a{
+	width: 32px;
+	height: 32px;
+	display: block;
+}
