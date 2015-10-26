@@ -11,10 +11,11 @@ router.get('/', function(req, res, next) {
 
 	var Characterswords = new Array("O Aatrox","A Ahri","A Akali","O Amummu","A Annie", "O Darius", "O Draven", "O Garen", "A Elise", "A Leona","A Lulu");
 
-	var randBase = Math.floor((Math.random() * (Basewords.length - 1)));
-	var randAction = Math.floor((Math.random() * (Actionwords.length - 1)));
-	var randItens = Math.floor((Math.random() * (Itenswords.length - 1)));
-	var randCharacters = Math.floor((Math.random() * (Characterswords.length - 1)));
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+	var randBase = Math.floor((Math.random() * (Basewords.length)));
+	var randAction = Math.floor((Math.random() * (Actionwords.length)));
+	var randItens = Math.floor((Math.random() * (Itenswords.length)));
+	var randCharacters = Math.floor((Math.random() * (Characterswords.length)));
 
 	console.log(Characterswords[randCharacters]+' '+Actionwords[randAction]+" pra pegar "+ Itenswords[randItens]);
  
